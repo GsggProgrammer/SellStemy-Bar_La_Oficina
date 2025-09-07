@@ -1,0 +1,95 @@
+body {
+    background-image: url('../LogoGpt.jpg') !important; /* Ruta a tu imagen */
+    background-size: cover !important; /* Hace que la imagen cubra toda el área */
+    background-repeat: no-repeat !important; /* Evita que la imagen se repita */
+    background-position: center !important; /* Centra la imagen en la pantalla */
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header .btn {
+    margin-left: auto;
+    border: 2px solid black;
+}
+
+h1 {
+    margin-left: 21% !important;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Negro con 50% de transparencia */
+    border-radius: 15px; /* Radio de borde */
+    padding: 7px 15px; /* Espaciado interno */
+    color: white !important; /* Color del texto */
+    border: 2px solid white;
+    display: inline-block; /* Permite que el fondo rodee el texto */
+}
+
+.container {
+    padding-top: 20px; /* Espacio adicional para separar el header de las tarjetas */
+}
+
+.card {
+    width: 100%; /* Ocupa todo el ancho del contenedor de columna */
+    border: 3px solid #000;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white !important;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.6) !important; 
+}
+
+.card:hover {
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-body h3 {
+    margin: 15px 0;
+    font-size: 23px;
+    text-align: center;
+    flex-grow: 1; /* Permite que el título ocupe el espacio restante */
+    margin: 0; /* Elimina cualquier margen adicional */
+}
+
+.card-body p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.TextButton {
+    font-weight: bold;
+}
+.FormButton {
+    color: rgb(238, 154, 9) !important;
+    margin-left: auto;
+    border: 2px solid rgb(238, 154, 9) !important;
+}
+.FormButton:hover {
+    color: white !important;
+    background-color: rgb(238, 154, 9) !important;
+    border: 3px solid rgb(238, 154, 9) !important;
+}
+
+.cerrarSesion {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 2px solid white !important;
+    color: white !important;
+}
+.cerrarSesion:hover{
+    background-color: #b51d1d !important;
+    border: 3px solid  #b51d1d !important;
+}
+.volver {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 2px solid white !important;
+    color: white !important;
+}
+.volver:hover {
+    background-color: rgb(238, 154, 9) !important;
+    border: 3px solid  rgb(238, 154, 9) !important;
+}

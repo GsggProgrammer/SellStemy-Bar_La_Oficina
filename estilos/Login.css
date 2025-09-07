@@ -1,0 +1,92 @@
+body {
+    background-image: url('../LogoGpt.jpg'); /* Ruta a tu imagen */
+    background-size: cover; /* Hace que la imagen cubra toda el área */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en la pantalla */
+}
+
+h1 {
+    background-color: rgba(0, 0, 0, 0.7); /* Negro con 50% de transparencia */
+    border-radius: 15px; /* Radio de borde */
+    padding: 10px 20px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    border: 2px solid white;
+    display: inline-block; /* Permite que el fondo rodee el texto */
+}
+
+label {
+    color: rgb(178, 123, 68) !important;
+}
+input.CTRLS {
+    color: white !important; /* Cambiar el color del texto a blanco */
+}
+.card {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 100%; /* Añade esta línea para que todos los cards tengan la misma altura */
+    border: 2px solid white !important;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.7) !important; 
+    padding: 15px; /* Añadido para mantener consistencia en todos los cards */
+}
+
+.card:hover {
+    background-color: rgba(0, 0, 0, 0.9) !important; /* Cambia a un color marrón oscuro en hover */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), /* Sombra más amplia y suave para un efecto tridimensional */
+                0 10px 20px rgba(0, 0, 0, 0.3); /* Añade una sombra más cercana y difusa */
+    border: 2px solid white !important; /* Borde negro más grueso */
+    transform: translateY(-7px); /* Simula que el card se eleva */
+}
+
+input::placeholder {
+    color: white; /* Cambia esto al color deseado para el placeholder */
+}
+
+input:-webkit-autofill {
+    background-color: transparent !important; /* Asegura que el fondo permanezca transparente */
+    color: white !important; /* Mantiene el color del texto */
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important; /* Remueve el fondo de autofill */
+    transition: background-color 5000s ease-in-out 0s; /* Solución para algunos navegadores */
+}
+
+.card button {
+    margin-top: 5%;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 13px 26px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.card button:hover {
+    background-color: #B55B1D;
+}
+
+.card h3 {
+    color: white !important;
+    margin: 15px 0;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.CTRLS {
+    border: none; /* Eliminar el borde */
+    background-color: transparent; /* Hacer el fondo transparente */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: none; /* Quitar sombra */
+    outline: none; /* Quitar el contorno al hacer foco */
+    border-bottom: 1px solid #ced4da; /* Opcional: agregar un borde inferior */
+    color: white !important; /* Cambiar el color del texto a blanco */
+}
+
+.CTRLS:focus {
+    color: white !important; /* Asegurarse de que el color del texto permanezca blanco al hacer foco */
+    border-bottom: 1px solid #B55B1D; /* Cambiar el color del borde inferior al hacer foco */
+}

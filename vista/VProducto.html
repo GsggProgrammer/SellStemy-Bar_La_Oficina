@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Registrar Usuarios Bar-LaOficina</title>
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="../estilos/Vistas.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div class="container-fluid">
+    <section>
+          <div class="row">
+            <div class="col-2">
+              <a href="../vistaprincipal.php" class="btn btn-outline-dark mr-auto cerrarSesion">
+                <i class="fas fa-arrow-left"></i> <span>Volver</span>
+              </a>
+            </div>
+          <div class="col-8">
+            <h1> Registrar Productos Bar-LaOficina </h1>
+          </div>
+          <div class="col-2">
+            <a href="#" class="btn btn-outline-dark cerrarSesion" onclick="cerrarSesion()">
+             <i class="fas fa-sign-out-alt"></i> <span>Cerrar sesión</span>
+            </a>
+          </div>
+          </div>
+            <form method="post" action="../controlador/CProducto.php">
+            <div class="row">
+              <div class="col-4">
+                <label>Nombre Del Producto</label>
+                <input type="text" maxlength="100" id="d1" name="d1" required>
+              </div>
+              <div class="col-4">
+                <label>Valor de compra</label>
+                <input type="number" min="50" step="50" id="d2" name="d2" required>
+              </div>
+              <div class="col-4">
+                <label>Tipo de Producto</label>
+                <select id="d3" name="d3" required>
+                  <option value="Alcoholica">Alcoholica</option>
+                  <option value="No Alcoholica">No Alcoholica</option>
+                  <option value="Snacks">Snacks</option>
+                  <option value="Platos Elaborados">Plato Elaborado</option>
+                </select>
+              </div>
+            <div class="row">
+              <div class="col-2">
+                <label>Cantidad</label>
+                <input type="number" min="1" step="1" id="d4" name="d4" required>
+              </div>
+              <div class="col-5">
+                <label>Descripcion</label>
+                <input type="text" maxlength="150" id="d5" name="d5">
+              </div>
+              <div class="col-5">
+                <button type="submit" name="boton" value="Registrar" class="btn btn-success">
+                    Registrar Producto
+                </button>
+              </div>
+            </div>
+            </div>
+            </form>
+          </div>
+        </div>
+        <form method="post" action="../controlador/CProducto.php">
+          <div class="row">
+           <div class="col-8">
+            <label for="d1"> Ingresar Nombre del Producto :</label>
+            <input type="text" id="d1" name="d1">
+          </div>
+          <div class="col-2">
+            <button type="submit" name="boton" value="consultaNombreProducto" class="btn btn-primary"> Buscar </button>
+          </div>
+          <div class="col-2">
+            <button type="submit" name="boton" value="consultaTodos" class="btn btn-primary"> Ver Todos </button>
+          </div>
+         </div>
+        </form>
+    </section>
+    </div>
+    </body>
+    <script>
+      function cerrarSesion() {
+          if (confirm("¿Estás seguro de que deseas cerrar sesión?")) {
+            window.location.href = "../cerrarSesion.php";
+          }
+      }
+    </script>
+</html>

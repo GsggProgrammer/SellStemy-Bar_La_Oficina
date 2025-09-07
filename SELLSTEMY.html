@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELLSTEMY</title>
+    <link rel="stylesheet" href="SELLSTEMYEST.css">
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => {
+                section.style.display = (section.id === sectionId) ? 'block' : 'none';
+            });
+        }
+
+        window.onload = () => {
+            showSection('resumen'); // Mostrar la sección de resumen al cargar
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">SELLSTEMY</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#" onclick="showSection('resumen')">Resumen</a></li>
+                <li><a href="#" onclick="showSection('equipo')">Nuestro Equipo</a></li>
+                <li><a href="#" onclick="showSection('mision')">Misión</a></li>
+                <li><a href="#" onclick="showSection('vision')">Visión</a></li>
+                <li><a href="#" onclick="showSection('objetivos')">Objetivos</a></li>
+                <li><a href="#" onclick="showSection('publico')">Público Objetivo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="resumen" class="resumen">
+            <h2>Resumen</h2>
+            <p>Sellstemy es una empresa especializada en el desarrollo de soluciones web a medida. Ofrece servicios de diseño y programación de sitios web, aplicaciones web empresariales, y plataformas e-commerce. Su enfoque está en crear proyectos innovadores y personalizados que optimicen los procesos de sus clientes, mejoren su presencia en línea y contribuyan al crecimiento digital de sus negocios. Sellstemy se destaca por su compromiso con la calidad, la eficiencia y el soporte técnico post-desarrollo.</p>
+        </section>
+
+        <section id="equipo" class="equipo" style="display: none;">
+            <h2>Nuestro equipo</h2>
+            <p>Tenemos el mejor equipo de profesionales del mercado para cumplir con los objetivos de la empresa.</p>
+            <div class="miembro">
+                <img src="zharick.jpeg" width="200px" alt="Zharick Yojana">
+                <h3>Zharick Yojana Puentes Rodriguez</h3>
+                <p>Desarrollador Web</p>
+            </div>
+            <div class="miembro">
+                <img src="santiago.jpeg" width="200px" alt="Gabriel Santiago">
+                <h3>Gabriel Santiago Guayana Gallegos</h3>
+                <p>Desarrollador Web</p>
+            </div>
+        </section>
+
+        <section id="mision" class="mision-vision" style="display: none;">
+            <h2>Misión</h2>
+            <p>Nuestra misión para 2035 es crear soluciones web innovadoras y sostenibles que impulsen el crecimiento de las empresas, facilitando su transformación digital a través de plataformas seguras, escalables y de alto rendimiento. Nos comprometemos a integrar tecnologías avanzadas que mejoren la eficiencia y accesibilidad, contribuyendo a la economía digital global. Al ofrecer experiencias digitales de calidad, buscamos no solo optimizar la presencia de nuestros clientes en línea, sino también inspirar a futuras generaciones a construir un mundo más conectado, inclusivo y tecnológicamente avanzado.</p>
+        </section>
+
+        <section id="vision" class="mision-vision" style="display: none;">
+            <h2>Visión</h2>
+            <p>Para 2030, nuestra visión es ser la empresa de desarrollo web más innovadora y confiable a nivel global, reconocida por nuestra capacidad para transformar ideas en soluciones digitales impactantes. Aspiramos a liderar la industria en la creación de plataformas que no solo optimicen el rendimiento empresarial, sino que también promuevan la sostenibilidad y la inclusión. Nos proponemos ser un referente en la integración de tecnologías emergentes, contribuyendo a un futuro donde cada negocio, sin importar su tamaño, tenga acceso a herramientas digitales que potencien su crecimiento y conecten a las comunidades de manera efectiva.</p>
+        </section>
+
+        <section id="objetivos" class="objetivos" style="display: none;">
+            <h2>Objetivos</h2>
+            <ol>
+                <li>Diseñar soluciones web personalizadas para mejorar la presencia digital de los clientes.</li>
+                <li>Proporcionar soluciones web innovadoras y personalizadas que optimicen la presencia digital y el rendimiento de los negocios.</li>
+                <li>Optimizar el rendimiento de sitios web a través de técnicas de SEO y carga rápida.</li>
+                <li>Desarrollar plataformas seguras y escalables para comercio electrónico.</li>
+                <li>Integrar tecnologías avanzadas como inteligencia artificial y automatización en aplicaciones web.</li>
+            </ol>
+        </section>
+
+        <section id="publico" class="publico-objetivo" style="display: none;">
+            <h2>Público Objetivo</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>EMPRENDEDORES</h3>
+                    <p>Pequeños, medianos y grandes empresarios que buscan establecer o mejorar su presencia digital para aumentar sus ventas y atraer más clientes.</p>
+                </div>
+                <div class="card">
+                    <h3>PROGRAMADORES</h3>
+                    <p>Desarrolladores que necesitan herramientas y plataformas eficaces para facilitar su trabajo, optimizar procesos y colaborar en proyectos digitales.</p>
+                </div>
+                <div class="card">
+                    <h3>DISEÑADORES</h3>
+                    <p>Creativos que buscan soluciones personalizadas para presentar su trabajo de manera atractiva y funcional, mejorando la experiencia del usuario en sus proyectos.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sellstemy. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+

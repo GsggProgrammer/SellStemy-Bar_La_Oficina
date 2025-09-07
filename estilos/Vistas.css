@@ -1,0 +1,173 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../LogoGpt.jpg') !important; /* Ruta a tu imagen */
+    background-size: cover !important; /* Hace que la imagen cubra toda el área */
+    background-repeat: no-repeat !important; /* Evita que la imagen se repita */
+    background-position: center !important; /* Centra la imagen en la pantalla */
+    padding: 20px !important;
+}
+
+h1 {
+    margin-left: 10% !important;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Negro con 50% de transparencia */
+    border-radius: 15px; /* Radio de borde */
+    padding: 7px 15px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    border: 2px solid white;
+    display: inline-block; /* Permite que el fondo rodee el texto */
+}
+
+/* Estilos para los botones de cerrar sesión y volver */
+.cerrarSesion {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 2px solid white !important;
+    color: white !important;
+}
+.cerrarSesion:hover{
+    background-color: #b51d1d !important;
+    border: 3px solid  #b51d1d !important;
+}
+.volver {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 2px solid white !important;
+    color: white !important;
+}
+.volver:hover {
+    background-color: rgb(238, 154, 9) !important;
+    border: 3px solid  rgb(238, 154, 9) !important;
+}
+/* Estilos del formulario */
+form {
+    background-color: rgba(0, 0, 0, 0.6) !important; 
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(75, 0, 130, 0.2);
+    margin-bottom: 30px;
+    border: 2px solid hsl(0, 0%, 0%);
+}
+
+label {
+    font-weight: bold;
+    color: hsl(0, 0%, 0%);
+    margin-bottom: 5px;
+}
+
+/* Estilos de los inputs */
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+input#d1 {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid hwb(0 0% 100%);
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fff0f5;
+}
+
+input:focus,
+select:focus {
+    border-color: hsl(0, 0%, 0%);
+    outline: none;
+    box-shadow: 0 0 15px hsl(0, 0%, 100%);
+}
+
+/* Estilos de botones */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 6%;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"] {
+    margin-top: 4.3%;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los botones de éxito y principales */
+button.btn-success,
+button.btn-primary {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 6px;
+    justify-content: center;
+}
+
+button.btn-success {
+    padding: 10px;
+    width: 50%;
+    border: 2px solid rgb(30, 113, 30);
+    font-size: 1.15rem;
+}
+
+button.btn-primary {
+    padding: 12px;
+    margin-top: 13%;
+    border: 2px solid rgb(57, 57, 224);
+    font-size: 1.15rem;
+}
+
+/* Estilos de botones con íconos */
+.btn-with-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 8px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-with-icon .icon-style {
+    font-size: 1.2em;
+}
+
+/* Estructura de filas y columnas */
+.row {
+    margin-bottom: 15px;
+}
+
+.col-4, .col-8, .col-2 {
+    padding: 0 10px;
+}
+legend {
+    font-size: 25px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espaciado externo hacia abajo */
+    border: 1px solid #ccc; /* Borde alrededor del legend */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Color de fondo */
+    text-align: center; /* Centrar el texto */
+}
+label {
+    color: white;
+}
+table {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5) !important; 
+}
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}

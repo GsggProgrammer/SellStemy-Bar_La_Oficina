@@ -1,0 +1,201 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: #f8f9fa;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+h1 {
+    margin-left: 10% !important;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Negro con 50% de transparencia */
+    border-radius: 15px; /* Radio de borde */
+    padding: 7px 15px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    border: 2px solid white;
+    display: inline-block; /* Permite que el fondo rodee el texto */
+}
+.cerrarSesion {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 2px solid white !important;
+    color: white !important;
+}
+.cerrarSesion:hover{
+    background-color: #b51d1d !important;
+    border: 3px solid  #b51d1d !important;
+}
+.volver {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 2px solid white !important;
+    color: white !important;
+}
+.volver:hover {
+    background-color: rgb(238, 154, 9) !important;
+    border: 3px solid  rgb(238, 154, 9) !important;
+}
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para las celdas de encabezado (th) */
+th {
+    background-color: hsl(204, 71%, 52%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+    width:10% !important;
+}
+
+/* Estilo para las filas */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger {
+    border: 2px solid rgb(255, 0, 0); /* Borde negro */
+    background-color: transparent; /* Fondo transparente */
+    color: rgb(255, 0, 0) !important; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.btn-warning {
+    border: 2px solid rgb(255, 162, 0); /* Borde negro */
+    background-color: transparent; /* Fondo transparente */
+    color: rgb(255, 162, 0) !important; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.btn-danger:hover, .btn-warning:hover{
+    background-color: none;
+    color: white !important;
+}
+
+/* Estilo centrado para la celda de acciones */
+td[style='text-align:center;'] {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* MODAL DE ACTUALIZACION */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../LogoGpt.jpg') !important; /* Ruta a tu imagen */
+    background-size: cover !important; /* Hace que la imagen cubra toda el área */
+    background-repeat: no-repeat !important; /* Evita que la imagen se repita */
+    background-position: center !important; /* Centra la imagen en la pantalla */
+    margin: 0;  /* Asegura que no haya márgenes por defecto */
+}
+
+.rounded-modal {
+    border-radius: 15px; /* Bordes redondeados */
+    width: 80%; /* Ancho del modal */
+    margin: 20px auto; /* Espacio superior/inferior y centrado horizontal */
+    transition: box-shadow 0.3s ease; /* Transición suave para el efecto de sombra */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white !important;
+}
+
+.modal-content {
+    padding: 20px; /* Espacio interior del modal */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo del modal */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra inicial del modal */
+    color: white !important;
+}
+
+.rounded-modal:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Sombra más intensa al pasar el mouse */
+}
+
+/* Otros estilos permanecen igual */
+.modal-header {
+    border-bottom: none; /* Sin borde en la parte inferior del encabezado */
+    background-color: hsl(204, 71%, 52%);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 2%;
+    border: 5px solid hsl(204, 71%, 52%) !important;
+    border-radius: 5%;
+}
+
+.modal-footer {
+    border-top: none; /* Sin borde en la parte superior del pie del modal */
+}
+
+.modal-body {
+    max-height: 600px; /* Altura máxima del cuerpo del modal */
+    overflow-y: auto; /* Permitir el desplazamiento vertical */
+    padding: 20px; /* Espacio interior del cuerpo */
+    font-size: 16px;
+    color: white !important;
+}
+
+/* Estilo para inputs y selectores */
+.modal-body input,
+.modal-body select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Estilo para etiquetas */
+.modal-body label {
+    font-size: 14px;
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Estilo para botones */
+.modal-footer .btn {
+    padding: 10px 20px;
+    background-color: hsl(204, 71%, 52%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-footer .btn:hover {
+    background-color: hsl(204, 71%, 60%);
+}
+
+/* Botón de cerrar */
+.modal-footer .btn-secondary {
+    background-color: #6c757d;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Estilo para los formularios */
+.modal-body .row {
+    margin-bottom: 15px;
+}
+
+/* Columnas del modal */
+.modal-body .col-4, .modal-body .col-6 {
+    padding: 0 10px;
+    margin-bottom: 15px;
+}

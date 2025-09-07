@@ -1,0 +1,217 @@
+/* Estilos generales para el formulario de productos */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../LogoGpt.jpg') !important; /* Ruta a tu imagen */
+    background-size: cover !important; /* Hace que la imagen cubra toda el área */
+    background-repeat: no-repeat !important; /* Evita que la imagen se repita */
+    background-position: center !important; /* Centra la imagen en la pantalla */
+    padding: 20px;
+}
+h1 {
+    margin-left: 10% !important;
+    text-align: center;
+    margin-bottom: 1vh !important;
+    font-size: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Negro con 50% de transparencia */
+    border-radius: 15px; /* Radio de borde */
+    padding: 7px 15px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    border: 2px solid white;
+    display: inline-block; /* Permite que el fondo rodee el texto */
+}
+.cerrarSesion {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 2px solid white !important;
+    color: white !important;
+}
+.cerrarSesion:hover{
+    background-color: #b51d1d !important;
+    border: 3px solid  #b51d1d !important;
+}
+.volver {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 2px solid white !important;
+    color: white !important;
+}
+.volver:hover {
+    background-color: rgb(238, 154, 9) !important;
+    border: 3px solid  rgb(238, 154, 9) !important;
+}
+section {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Leyenda del formulario */
+fieldset {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+/* Tabla de productos */
+.table {
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.7) !important;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white !important;
+    padding: 10px;
+}
+
+.table td {
+    padding: 10px !important;
+    color: white !important;
+    background-color: transparent !important;
+
+}
+
+input {
+    outline: none !important;
+    background-color: transparent;
+    color: white !important;
+    width: 50%;
+}
+label{
+    color: white !important;
+}
+/* Inputs sin borde */
+.sinborde {
+    border: none;
+    background-color: transparent;
+    font-size: 1em;
+    text-align: center;
+    color: white !important;
+}
+
+.sinborde:focus {
+    outline: none;
+}
+
+/* Botones */
+button[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+
+.btn-success{
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgb(30, 113, 30);
+}
+.btn-success:hover{
+    background-color: green;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.btn-primary {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgb(57, 57, 224);
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+#consulta1{
+    margin-top: 7vh !important;
+}
+#consulta2{
+    margin-top: 7vh !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 0.9em;
+    }
+    
+    button[type="submit"] {
+        width: 100%;
+    }
+}
+option{
+    font-size: 0.9em;
+    background-color: transparent;
+}
+.metodoPago{
+    background-color: transparent;
+    border: none;
+    padding: 14px;
+    margin-bottom: 20px;
+    color: white;
+}
+/* Estilo para el select */
+.select {
+    background-color: black; /* Fondo blanco para el select */
+    color: white; /* Texto visible en el select */
+    padding: 5px;
+}
+
+/* Estilo para las opciones del select */
+.select option {
+    background-color: black; /* Fondo blanco para las opciones */
+    color: white; /* Texto visible en las opciones */
+    padding: 5px;
+}
+
+/* Si las opciones deben tener otro color al seleccionar */
+.select option:checked {
+    background-color: lightgray; /* Color de fondo al seleccionar */
+    color: green; /* Color del texto al seleccionar */
+}
+input::placeholder{
+    color: white;
+}
+u {
+    text-decoration: none;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10%;
+}
+#formConsulta{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    margin-top: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+#consultaEspecifica{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid hwb(0 0% 100%);
+    border-radius: 6px;
+    font-size: 1rem;
+    color: black !important;
+    background-color: #fff0f5;
+}
+#labelConsultaEspecifica {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+h2{
+    color: white;
+    font-size: 1.2 rem;
+}
+#consultaFecha {
+    margin-top: 5vh !important;
+}

@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo */
+}
+
+header {
+    background-color: #0056b3; /* Color del encabezado */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffd700; /* Color dorado al pasar el ratón */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #0056b3; /* Color de los subtítulos */
+    font-size: 1.8em;
+}
+.miembro {
+    text-align: center;
+    margin: 10px;
+} 
+.miembro img {
+    border-radius: 50%; /* Imagen circular */
+    border: 3px solid #0056b3; /* Borde de la imagen */
+}
+
+p, li {
+    color: #333; /* Color de texto */
+    line-height: 1.6;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaciado entre tarjetas */
+}
+
+.card {
+    background-color: #e7f3fe;
+    border-radius: 10px;
+    padding: 15px;
+    width: calc(30% - 20px); /* Tres tarjetas en una fila con margen */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
+    position: relative; /* Posicionamiento relativo para efecto de sombra */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Aumentar sombra al pasar el ratón */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0056b3; /* Color del pie de página */
+    color: white;
+}
+
+
