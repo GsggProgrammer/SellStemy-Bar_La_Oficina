@@ -65,7 +65,7 @@ RUP
    - Copiar la carpeta del proyecto en htdocs (XAMPP) o el directorio correspondiente.
 
 4. Acceder al sistema:
-   - Abrir en el navegador: http://localhost/RUP-BarLaOficina
+   - Abrir en el navegador: http://localhost/RUP
 
 👤 Roles de usuario y permisos
 A todos los usuarios se les verifica credenciales mediante un nombre de usuario que es su numero de documento y una contraseña pre-asignada
