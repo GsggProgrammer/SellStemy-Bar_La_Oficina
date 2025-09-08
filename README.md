@@ -120,5 +120,5 @@ Todos disponibles en la carpeta docs/diagramas.
    - Navegador web actualizado
 
 📝 Notas adicionales
-   - Este proyecto fue desarrollado como parte de un sistema de información empresarial orientado al sector de bares y restaurantes, en colaboración con el cliente Bar - La Oficina.
+   - Este proyecto fue desarrollado como parte de un sistema de información empresarial orientado a cualquier sector que maneje alguno de los modulos mencionados, en colaboración con el cliente Bar - La Oficina.
    - La organización de carpetas sigue la metodología RUP y la arquitectura MVC para facilitar su escalabilidad y mantenimiento.
