@@ -42,24 +42,52 @@ Es un sistema cerrado, unicamente personas pertenecientes a la empresa y con un 
     - presupuesto.md
 
   - README.md # Guía principal del proyecto
-  - .gitignore # Archivos a ignorar
+  - .gitattributes # Archivos a ignorar
+  - cerrarSesion.php # Archivo para manejo de sesiones
+  - estilos.css # Estilos generales de todas las paginas del sistema
+  - vistaPrincipal.php # Pagina principal del sistema
+  - LogoGpt.jpg # Logo principal de la empresa cliente (Bar - La Oficina)
+
+  # Pagina web de la empresa desarrolladora del sistema ()
+  - SELLSTEMY.html
+  - SELLSTEMYEST.css
 
 ## 🚀 Instalación y ejecución
 
 1. **Clonar el repositorio**:
    - ```bash
    - git clone https://github.com/tuusuario/RUP.git
+   - En "tuusuario" debes ingresar tu nombre de usuario de GitHub
 
 2. Configurar la base de datos:
-   - Importar el archivo database/bar_la_oficina.sql en tu gestor MySQL/MariaDB.
-   - Actualizar credenciales de conexión en los archivos de configuración del proyecto (src/modelo/conexion.php o equivalente).
+   - Importar el archivo proyecto.sql en tu gestor MySQL/MariaDB.
+   - Ejecutar todo el codigo del archivo proyecto.sql
+   - Verificar que la base de datos ha sido creada con los registros iniciales
 
 3. Levantar el servidor local:
-   - Usar XAMPP/WAMP/Laragon o un servidor web con PHP.
-   - Copiar la carpeta del proyecto en htdocs (XAMPP) o el directorio correspondiente.
+   - Usar XAMPP como servidor web PHP (Si no lo tienes descargado, ingresa aqui https://www.apachefriends.org/es/download.html y selecciona la ultima version)
+   - Configurar descarga de XAMPP
+   - Ejecutar XAMPP Control Panel
+   - Iniciar el servicio de Apache y MySql
+   - Copiar toda la carpeta del proyecto (RUP) en htdocs ("C:\xampp\htdocs" por defecto sin hacer cambios en el PATH)
 
 4. Acceder al sistema:
    - Abrir en el navegador: http://localhost/RUP
+   - Ingresar al archivo http://localhost/RUP/vista/VLogin.html
+
+5. Acceder como tipo de usuario en especifico
+
+   - Tipo Administrador
+     - Nombre de usuario: 1147484267
+     - Contraseña: GSGG_ADMIN
+
+   - Tipo Almacenista
+     - Nombre de usuario: 1147484264
+     - Contraseña: LPGG_ADMIN
+
+   - Tipo Cajero
+     - Nombre de usuario: 1147484261
+     - Contraseña: MG_ADMIN
 
 👤 Roles de usuario y permisos
 A todos los usuarios se les verifica credenciales mediante un nombre de usuario que es su numero de documento y una contraseña pre-asignada
