@@ -27,26 +27,21 @@ Es un sistema cerrado, unicamente personas pertenecientes a la empresa y con un 
 ## 📂 Estructura del repositorio
 
 - RUP
-  - src/ # Código fuente
-    - modelo/ # Entidades y lógica de negocio
-    - controlador/ # Controladores
-    - vista/ # Interfaces de usuario (HTML, JS, PHP, etc.)
-    - estilos/ # Hojas de estilo (CSS)
-
-  - database/ # Base de datos
-    - bar_la_oficina.sql # Script SQL con tablas y datos iniciales
+  - modelo/ # Entidades y lógica de negocio (PHP, MySQL)
+  - controlador/ # Controladores (PHP)
+  - vista/ # Interfaces de usuario (HTML, JS, PHP, etc.)
+  - estilos/ # Hojas de estilo (CSS)
+  - proyecto.sql # Script SQL con tablas y datos iniciales
 
   - docs/ # Documentación y diagramas
-    - diagramas/
-      - casos_de_uso.png
-      - diagrama_clases.png
-      - diagrama_relacional.png
-      - modelo_entidad_relacion.png
-      - diccionario_datos.md
-      - presupuesto.md
+    - casos_de_uso.png
+    - diagrama_clases.png
+    - diagrama_relacional.png
+    - modelo_entidad_relacion.png
+    - diccionario_datos.md
+    - presupuesto.md
 
   - README.md # Guía principal del proyecto
-  - LICENSE # Licencia del proyecto
   - .gitignore # Archivos a ignorar
 
 ## 🚀 Instalación y ejecución
