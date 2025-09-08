@@ -48,7 +48,7 @@ Es un sistema cerrado, unicamente personas pertenecientes a la empresa y con un 
   - vistaPrincipal.php # Pagina principal del sistema
   - LogoGpt.jpg # Logo principal de la empresa cliente (Bar - La Oficina)
 
-  # Pagina web de la empresa desarrolladora del sistema ()
+  # Pagina web de la empresa desarrolladora del sistema
   - SELLSTEMY.html
   - SELLSTEMYEST.css
 
